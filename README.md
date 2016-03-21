@@ -3,17 +3,23 @@ We are going to review the basics of github now that you've had a chance to use 
 
 ### Contents
 
-* [basics] (#basics)
+* [basics - storing your code on github] (#basics)
+* [merge conflicts - dealing with multiple people editing the same code](#merge-conflicts)
+* [gitignores - keeping your repository clean](#.gitignore)
+* [readme - documentation on GitHub](#readme)
+* [branches - using github to help you](#branches)
+* [pull requests - keeping everything from breaking](#pull-requests)
+* [ssh keys - for your convenience](#ssh-keys)
 
 ### Basics
 ##### Cloning a repository
 1. Go to the repository page on github and copy the web address
 2. `git clone <html>` 
 
-##### Getting code from a repository
+##### Getting Code From a Repository
 1. `git pull`
 
-##### Dealing with code
+##### Dealing With Code
 1. `git add <file>` tells github to track that file
   * `git add -A` adds all untracked files not in .gitignore
 2. `git commit` commits the added changes to your local git repository
