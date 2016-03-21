@@ -3,7 +3,7 @@ We are going to review the basics of github now that you've had a chance to use 
 
 ### Contents
 
-* [basics] (###basics)
+* [basics] (#basics)
 
 ### Basics
 ##### Cloning a repository
