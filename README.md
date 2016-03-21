@@ -1,6 +1,10 @@
 # Github Tutorial
 We are going to review the basics of github now that you've had a chance to use it so you can catch up on anything you've missed, then we will go more in depth on some of the features which might help you in your final project, especially related to coding with other people.
 
+### Contents
+
+* (# Basics)
+
 ### Basics
 ##### Cloning a repository
 1. Go to the repository page on github and copy the web address
