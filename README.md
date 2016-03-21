@@ -5,8 +5,8 @@ We are going to review the basics of github now that you've had a chance to use 
 
 * [basics - storing your code on github] (#basics)
 * [merge conflicts - dealing with multiple people editing the same code](#merge-conflicts)
-* [gitignores - keeping your repository clean](#gitignore)
-* [readme - documentation on GitHub](#readme )
+* [gitignores - keeping your repository clean](#using-gitignore)
+* [readme - documentation on GitHub](#using-readme )
 * [branches - using github to help you](#branches)
 * [pull requests - keeping everything from breaking](#pull-requests)
 * [ssh keys - for your convenience](#ssh-keys)
@@ -44,14 +44,14 @@ Merge conflicts look like this (in the file with the conflict):
 To deal with this, just open the file and find the conflicts, then delete everything you don't want.
 Then just add, commit, and push your changes.
 
-### gitignore
+### Using gitignore
 Gitignores are wonderful things, they allow you to tell github that you want it to ignore a file, or a whole bunch of files.  This is usefull if you need to have a large video in your git repository, but don't want to (or can't) upload it to GitHub, or if you have 500 .txt files storing data that someone else can get for themselves if they really want it.
 
 Using a .gitignore is really easy, you just make a file named .gitignore in your repository, and type the name of any files you want to ignore.  These file names use the same syntax as the command line, where `*` means anything can go here: for example adding `*.txt` to the .gitignore will make github ignore all files ending in .txt.
 
 If you have already started tracking a file and don't want to anymore, you can use `git rm --cached <file>`.  This removes git's history of that file.
 
-### README 
+### Using README 
 If your repository has a file README.md, it will be displayed under the repository on github.  This file is an excelent place to put documentation about running the code in the repository.  It uses the markdown formatting language which is documented specifically for github [here] (https://guides.github.com/features/mastering-markdown/).  This is the README file for this repository, if you open the raw text version of it, you can see an example of some of the markdown formatting.
 
 ### Branches
