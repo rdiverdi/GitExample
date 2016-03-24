@@ -4,6 +4,7 @@ We are going to review the basics of github now that you've had a chance to use 
 ### Contents
 
 * [basics - storing your code on github] (#basics)
+* [add a collaborator - giving other people access to your repository] (#adding-a-collaborator)
 * [merge conflicts - dealing with multiple people editing the same code](#merge-conflicts)
 * [gitignores - keeping your repository clean](#using-gitignore)
 * [readme - documentation on GitHub](#using-readme )
@@ -26,6 +27,11 @@ We are going to review the basics of github now that you've had a chance to use 
   * This only effects your computer, it doesn't push anything to the github website
   * `git commit -am` simultaneously adds changes to previously tracked files and commits them (it will not add a new file)
 3. `git push` pushes your changes to github online
+
+### Adding a Collaborator
+To add a collaborator, go to the repository on github (online), and click on the plus in the top right corner, click the option for "New Collaborator."  Find your teammates by their email or github user name and add them.
+They will be able to clone your repository and push code to it, but the repository will not appear in their list of repositories.
+There will be a line on their main github page saying they have been added to your repository.
 
 ### Merge Conflicts
 GitHub "merges" files by matching up lines from each file, which allows it to merge files automatically as long as two people haven't edited the same line of code.  When this happens, GitHub has two options, and it has no way of knowing which one is correct, so it tells you there is a merge conflict, and lets you decide which code to keep.
