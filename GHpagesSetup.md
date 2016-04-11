@@ -36,9 +36,11 @@ If you have a markdown file for, say, one of the project writeups and you want t
 #### NOTE:
 In order for the markdown file to appear formatted correctly, you need to put this:<br>
 ```
----<br>
+---
+
 ---
 ```
+
 at the top of the markdown file
 
 ## Making a Personal Page
