@@ -1,7 +1,7 @@
 ---
 ---
 # Making a Github Pages Website
-##### [Back to GitHub Tutorial](index)
+##### [Back to Github Tutorial](index)
 
 ### Contents
 - [making a project page - for a single project](#making-a-project-page)
