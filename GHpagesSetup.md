@@ -1,6 +1,8 @@
 ---
+kramdown:
+ input: GFM
 ---
-# Making a Github Pages Website
+# Making a GitHub Pages Website
 ##### [Back to Github Tutorial](index)
 
 ### Contents
