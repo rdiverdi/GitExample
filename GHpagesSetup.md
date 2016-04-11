@@ -1,7 +1,4 @@
 ---
-markdown: kramdown
-kramdown:
- input: GFM
 ---
 # Making a Github Pages Website
 ##### [Back to Github Tutorial](index)
