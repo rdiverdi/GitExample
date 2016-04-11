@@ -1,6 +1,7 @@
 ---
 ---
 # Making a Github Pages Website
+
 #### [Back to Github Tutorial](index)
 
 ## Contents
@@ -9,8 +10,10 @@
 - [hosting on a different domain](#hosting-webpage-on-custom-domain)
 
 ## Making a Project Page
+
 ### What Github Does
 Github will host a webpage for any of your projects.  It looks for a branch named gh_pages to find files for a website.  If you know how to make a website and just want to put the files somewhere for github to host them, make a branch for your project called `gh_pages` and push your website files to that branch.  Then go to `username.github.io/ProjectName` and you will get your webpage.
+
 ### Using Github to Make a Webpage
 To automatically generate a webpage:
 - Go to the github website, and open the page for the repository you want to make a website for.
@@ -40,6 +43,7 @@ at the top of the markdown file
 
 ## Making a Personal Page
 Github will host a webpage for you independet of specific projects on `username.github.io`.
+
 ### Setup Webpage:
 - Make a github repository called `<username>.github.io`
 - follow the same steps as [above](#using-github-to-make-a-webpage) (settigs, launch automatic page generator)
