@@ -1,17 +1,17 @@
 ---
 ---
 # Making a Github Pages Website
-##### [Back to Github Tutorial](index)
+#### [Back to Github Tutorial](index)
 
-### Contents
+## Contents
 - [making a project page - for a single project](#making-a-project-page)
 - [making a personal page - for something like a portfolio website](#making-a-personal-page)
 - [hosting on a different domain](#hosting-webpage-on-custom-domain)
 
-### Making a Project Page
-##### What Github Does
+## Making a Project Page
+### What Github Does
 Github will host a webpage for any of your projects.  It looks for a branch named gh_pages to find files for a website.  If you know how to make a website and just want to put the files somewhere for github to host them, make a branch for your project called `gh_pages` and push your website files to that branch.  Then go to `username.github.io/ProjectName` and you will get your webpage.
-##### Using Github to Make a Webpage
+### Using Github to Make a Webpage
 To automatically generate a webpage:
 - Go to the github website, and open the page for the repository you want to make a website for.
 - Click on `Settings` (in the top menu)
@@ -27,20 +27,20 @@ To automatically generate a webpage:
 - Your page should now be posted to `username.github.io/ProjectName`
 You can always go back and edit your page by going back to settings, launch page generator: the content will be the same as you left it.
 
-##### Linking to a markdown file
+### Linking to a markdown file
 If you have a markdown file for, say, one of the project writeups and you want to link to it, you can put a copy of it in the gh_pages branch of your repository (from terminal on your computer) and push it to github.  You can then link to that file from your main page using markdown syntax `[words that appear](filename)` to make a link to that file.
 
-###### NOTE:
-In order for the markdown file to appear formatted correctly, you need to put this:
+#### NOTE:
+In order for the markdown file to appear formatted correctly, you need to put this:<br>
 ```
----
+---<br>
 ---
 ```
 at the top of the markdown file
 
-### Making a Personal Page
+## Making a Personal Page
 Github will host a webpage for you independet of specific projects on `username.github.io`.
-##### Setup Webpage:
+### Setup Webpage:
 - Make a github repository called `<username>.github.io`
 - follow the same steps as [above](#using-github-to-make-a-webpage) (settigs, launch automatic page generator)
 - Alternately, like before, you can push your own website files to the `username.github.io` repository and it will host your webpage for you.
