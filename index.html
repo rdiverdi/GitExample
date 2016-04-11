@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Github Tutorial by rdiverdi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Github Tutorial</h1>
+      <h2 class="project-tagline">for github tutorial</h2>
+      <a href="https://github.com/rdiverdi/GitExample" class="btn">View on GitHub</a>
+      <a href="https://github.com/rdiverdi/GitExample/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/rdiverdi/GitExample/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Github Tutorial</h1>
+
+<p>We are going to review the basics of github now that you've had a chance to use it so you can catch up on anything you've missed, then we will go more in depth on some of the features which might help you in your final project, especially related to coding with other people.</p>
+
+<h3>
+<a id="contents" class="anchor" href="#contents" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contents</h3>
+
+<ul>
+<li><a href="#basics">basics - storing your code on github</a></li>
+<li><a href="#adding-a-collaborator">add a collaborator - giving other people access to your repository</a></li>
+<li><a href="#merge-conflicts">merge conflicts - dealing with multiple people editing the same code</a></li>
+<li><a href="#using-gitignore">gitignores - keeping your repository clean</a></li>
+<li><a href="#using-readme">readme - documentation on GitHub</a></li>
+<li><a href="#branches">branches - using github to help you</a></li>
+<li><a href="#pull-requests">pull requests - keeping everything from breaking</a></li>
+<li><a href="#ssh-keys">ssh keys - for your convenience</a></li>
+</ul>
+
+<h3>
+<a id="basics" class="anchor" href="#basics" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Basics</h3>
+
+<h5>
+<a id="cloning-a-repository" class="anchor" href="#cloning-a-repository" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cloning a repository</h5>
+
+<ol>
+<li>Go to the repository page on github and copy the web address</li>
+<li>
+<code>git clone &lt;html&gt;</code> </li>
+</ol>
+
+<h5>
+<a id="getting-code-from-a-repository" class="anchor" href="#getting-code-from-a-repository" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting Code From a Repository</h5>
+
+<ol>
+<li><code>git pull</code></li>
+</ol>
+
+<h5>
+<a id="dealing-with-code" class="anchor" href="#dealing-with-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dealing With Code</h5>
+
+<ol>
+<li>
+<code>git add &lt;file&gt;</code> tells github to track that file
+
+<ul>
+<li>
+<code>git add -A</code> adds all untracked files not in .gitignore</li>
+</ul>
+</li>
+<li>
+<code>git commit</code> commits the added changes to your local git repository
+
+<ul>
+<li>This only effects your computer, it doesn't push anything to the github website</li>
+<li>
+<code>git commit -am</code> simultaneously adds changes to previously tracked files and commits them (it will not add a new file)</li>
+</ul>
+</li>
+<li>
+<code>git push</code> pushes your changes to github online</li>
+</ol>
+
+<h3>
+<a id="adding-a-collaborator" class="anchor" href="#adding-a-collaborator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Adding a Collaborator</h3>
+
+<p>To add a collaborator, go to the repository on github (online), and click on the plus in the top right corner, click the option for "New Collaborator."  Find your teammates by their email or github user name and add them.
+They will be able to clone your repository and push code to it, but the repository will not appear in their list of repositories.
+There will be a line on their main github page saying they have been added to your repository.</p>
+
+<h3>
+<a id="merge-conflicts" class="anchor" href="#merge-conflicts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Merge Conflicts</h3>
+
+<p>GitHub "merges" files by matching up lines from each file, which allows it to merge files automatically as long as two people haven't edited the same line of code.  When this happens, GitHub has two options, and it has no way of knowing which one is correct, so it tells you there is a merge conflict, and lets you decide which code to keep.</p>
+
+<p>Merge conflicts look like this (in the file with the conflict):</p>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-k">&lt;&lt;&lt;&lt;&lt;&lt;</span><span class="pl-k">&lt;</span> <span class="pl-c1">HEAD</span>
+    code here 
+    <span class="pl-c">#this is where your edits to the code will be</span>
+<span class="pl-k">=======</span>
+    different code here 
+    <span class="pl-c">#this is where other peopl's edits to the same lines will be</span>
+<span class="pl-k">&gt;&gt;&gt;&gt;&gt;&gt;</span><span class="pl-k">&gt;</span> <span class="pl-c1">0<span class="pl-ii">83457078470583439</span></span></pre></div>
+
+<p><code>HEAD</code> is your local changes, the equals signs are where it switches from your changes to the other changes, and the giant number is the name of the specific commit you are trying to merge with.
+To deal with this, just open the file and find the conflicts, then delete everything you don't want.
+Then just add, commit, and push your changes.</p>
+
+<h3>
+<a id="using-gitignore" class="anchor" href="#using-gitignore" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using gitignore</h3>
+
+<p>Gitignores are wonderful things, they allow you to tell github that you want it to ignore a file, or a whole bunch of files.  This is usefull if you need to have a large video in your git repository, but don't want to (or can't) upload it to GitHub, or if you have 500 .txt files storing data that someone else can get for themselves if they really want it.</p>
+
+<p>Using a .gitignore is really easy, you just make a file named .gitignore in your repository, and type the name of any files you want to ignore.  These file names use the same syntax as the command line, where <code>*</code> means anything can go here: for example adding <code>*.txt</code> to the .gitignore will make github ignore all files ending in .txt.</p>
+
+<p>If you have already started tracking a file and don't want to anymore, you can use <code>git rm --cached &lt;file&gt;</code>.  This removes git's history of that file.</p>
+
+<h3>
+<a id="using-readme" class="anchor" href="#using-readme" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using README</h3>
+
+<p>If your repository has a file README.md, it will be displayed under the repository on github.  This file is an excelent place to put documentation about running the code in the repository.  It uses the markdown formatting language which is documented specifically for github <a href="https://guides.github.com/features/mastering-markdown/">here</a>.  This is the README file for this repository, if you open the raw text version of it, you can see an example of some of the markdown formatting.</p>
+
+<h3>
+<a id="branches" class="anchor" href="#branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Branches</h3>
+
+<p>Sometimes you want to try things out, but you don't know if they're going to work, and you don't want to break the things you already have.
+Or you and your partner are doing different things on the same code, and you don't want to keep dealing with merge conflicts everytime you sit down to do work.
+This is what branches are for</p>
+
+<h5>
+<a id="quick-overview" class="anchor" href="#quick-overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Quick Overview</h5>
+
+<p>Branches allow you to make changes to code while preserving a copy of the original.
+master is the branch you have been using, and it is the branch which should always hold the original working code.
+When you are trying things that might break everythin, you should make a branch, get your code working, then merge that branch back into master.  Alternatively, if everything you try fails miserably, you can just delete that branch and go back to the old code.</p>
+
+<h5>
+<a id="making-a-branch" class="anchor" href="#making-a-branch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Making a Branch</h5>
+
+<ul>
+<li>
+<code>git branch &lt;branchname&gt;</code> creates a local copy of a new branch, however it does not switch you to that branch</li>
+</ul>
+
+<h5>
+<a id="switching-between-branches" class="anchor" href="#switching-between-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Switching Between Branches</h5>
+
+<ul>
+<li>
+<code>git checkout &lt;branchname&gt;</code> switches you to that branch</li>
+<li>
+<code>git branch --list</code> lists all branches</li>
+</ul>
+
+<h5>
+<a id="push-and-pull-revisited" class="anchor" href="#push-and-pull-revisited" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Push and Pull Revisited</h5>
+
+<ul>
+<li>
+<code>git pull &lt;from&gt; &lt;branch&gt;</code> is the full command of git pull
+
+<ul>
+<li>Typically it assumes <code>&lt;from&gt;</code> to be <code>origin</code> and <code>&lt;branch&gt;</code> to be your current branch
+
+<ul>
+<li>This means pull from origin's copy of your current branch (on GitHub) to your local copy of that branch</li>
+</ul>
+</li>
+<li>You have also used <code>git pull upstream master</code> to get code from paul's repo, which is "upstream" of origin</li>
+<li>When using branches you can pull from any branch to any other branch
+
+<ul>
+<li>a common one is <code>git pull origin master</code> which is used to pull the master branch into whatever branch you are currently working on.</li>
+<li>If you are working on a branch and someone else changes code on master, you probably want to stay up to date with master, so you would pull those changes into your branch.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<code>git push</code> works the same way, where you can push from any branch to any other branch, although the prefered way of getting code to master is with pull requests (below)</li>
+</ul>
+
+<h3>
+<a id="pull-requests" class="anchor" href="#pull-requests" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pull Requests</h3>
+
+<p>You generally want to make sure all code on the master branch works, so rather than just trusting that anyone who pushes code to master knows what they're doing, it is good to use pull requests to allow other people in the project to check over the new code before incorporating it into master.</p>
+
+<ul>
+<li>You have been creating pull requests to submit your code, but you haven't seen the other side of them.</li>
+<li>When you look at a pull request, you can see all of the differences bewtween the file on master and the new file, and you can make comments.</li>
+<li>Other people can also switch to your branch and run your code</li>
+<li>Once people have decided the branch looks good, they can merge it into master from the GitHub website</li>
+</ul>
+
+<h5>
+<a id="pull-request-merge-conflicts" class="anchor" href="#pull-request-merge-conflicts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>pull request merge conflicts</h5>
+
+<ul>
+<li>Merge conflicts are caused by the same thing in pull requests as in other merges, but pull requests are mostly handled from the website, where you don't have access to the files.</li>
+<li>To fix this, you just move to the master branch and pull from the branch you want to merge in <code>git pull origin &lt;yourbranch&gt;</code>, then fix the merge conflicts the same way as before.</li>
+<li>If you pull from master on your new branch before submitting the pull request,, then you will handle the merge conflicts on the branch, which is generally better than handling them on master.</li>
+</ul>
+
+<h3>
+<a id="ssh-keys" class="anchor" href="#ssh-keys" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SSH Keys</h3>
+
+<p>So, you know how you have to type in your username and password every time you commit something to github?
+There's a nice way around that, called ssh keys.
+<a href="https://help.github.com/articles/checking-for-existing-ssh-keys/">here</a> is the beginning of github's tutorial for setting them up.  Once they're set up, you should clone repositories using the SSH URL, not the HTTPS URL, then you won't need a password.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/rdiverdi/GitExample">Github Tutorial</a> is maintained by <a href="https://github.com/rdiverdi">rdiverdi</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
