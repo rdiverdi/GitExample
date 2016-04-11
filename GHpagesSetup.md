@@ -6,6 +6,7 @@
 - [making a project page - for a single project](#making-a-project-page)
 - [making a personal page - for something like a portfolio website](#making-a-personal-page)
 - [hosting on a different domain](#hosting-webpage-on-custom-domain)
+- [Back to Github Tutorial](index)
 
 ### Making a Project Page
 ##### What Github Does
