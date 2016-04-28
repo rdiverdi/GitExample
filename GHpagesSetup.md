@@ -1,4 +1,7 @@
 ---
+title: Github Websites
+layout: template
+filename: GHpagesSetup.md
 ---
 # Making a Github Pages Website
 
