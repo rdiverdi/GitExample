@@ -10,6 +10,7 @@ We are going to review the basics of github now that you've had a chance to use 
 * [readme - documentation on GitHub](#using-readme )
 * [branches - using github to help you](#branches)
 * [pull requests - keeping everything from breaking](#pull-requests)
+* [reverting - fixing everything after it breaks](#reverting)
 * [ssh keys - for your convenience](#ssh-keys)
 
 ### Basics
@@ -98,6 +99,10 @@ You generally want to make sure all code on the master branch works, so rather t
 * Merge conflicts are caused by the same thing in pull requests as in other merges, but pull requests are mostly handled from the website, where you don't have access to the files.
 * To fix this, you just move to the master branch and pull from the branch you want to merge in `git pull origin <yourbranch>`, then fix the merge conflicts the same way as before.
 * If you pull from master on your new branch before submitting the pull request,, then you will handle the merge conflicts on the branch, which is generally better than handling them on master.
+
+### Reverting
+Version control is one of the most powerful aspects of Github.  This basically means there is an infinite undo button, in case you save broken code.  This undo button is called reverting.  There are a lot of different ways to revert code depending on where changes have been made.  The link below does a good job of outlining all of the ways you can get back to old versions of your code.
+[guide to reverting in GitHub](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
 
 ### SSH Keys
 So, you know how you have to type in your username and password every time you commit something to github?
