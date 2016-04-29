@@ -12,6 +12,8 @@ filename: GHpagesSetup.md
 - [making a personal page - for something like a portfolio website](#making-a-personal-page)
 - [hosting on a different domain](#hosting-webpage-on-custom-domain)
 
+Making a website with multiple pages requires a bit more setup, Some less cool ninjas set up instructions for it [here](http://phuston.github.io/patrickandfrantonarethebestninjas/howto)
+
 ## Making a Project Page
 
 ### What Github Does
@@ -35,6 +37,7 @@ You can always go back and edit your page by going back to settings, launch page
 
 ### Linking to a markdown file
 If you have a markdown file for, say, one of the project writeups and you want to link to it, you can put a copy of it in the gh_pages branch of your repository (from terminal on your computer) and push it to github.  You can then link to that file from your main page using markdown syntax `[words that appear](filename)` to make a link to that file.
+To make this markdown file appear like another webpage, you need to follow [these setup instructions](http://phuston.github.io/patrickandfrantonarethebestninjas/howto) to setup jekyll.
 
 #### NOTE:
 In order for the markdown file to appear formatted correctly, you need to put this:<br>
