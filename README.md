@@ -3,8 +3,8 @@ We are going to review the basics of github now that you've had a chance to use 
 
 ### Contents
 
-* [basics - storing your code on github] (#basics)
-* [add a collaborator - giving other people access to your repository] (#adding-a-collaborator)
+* [basics - storing your code on github](#basics)
+* [add a collaborator - giving other people access to your repository](#adding-a-collaborator)
 * [merge conflicts - dealing with multiple people editing the same code](#merge-conflicts)
 * [gitignores - keeping your repository clean](#using-gitignore)
 * [readme - documentation on GitHub](#using-readme )
@@ -12,6 +12,9 @@ We are going to review the basics of github now that you've had a chance to use 
 * [pull requests - keeping everything from breaking](#pull-requests)
 * [reverting - fixing everything after it breaks](#reverting)
 * [ssh keys - for your convenience](#ssh-keys)
+
+##### Useful Links
+*[markdown syntax](https://guides.github.com/features/mastering-markdown/)
 
 ### Basics
 ##### Cloning a repository
@@ -59,7 +62,10 @@ Using a .gitignore is really easy, you just make a file named .gitignore in your
 If you have already started tracking a file and don't want to anymore, you can use `git rm --cached <file>`.  This removes git's history of that file.
 
 ### Using README 
-If your repository has a file README.md, it will be displayed under the repository on github.  This file is an excelent place to put documentation about running the code in the repository.  It uses the markdown formatting language which is documented specifically for github [here] (https://guides.github.com/features/mastering-markdown/).  This is the README file for this repository, if you open the raw text version of it, you can see an example of some of the markdown formatting.
+If your repository has a file README.md, it will be displayed under the repository on github.  This file is an excelent place to put documentation about running the code in the repository.  It uses the markdown formatting language which is documented specifically for github [here](https://guides.github.com/features/mastering-markdown/).  This is the README file for this repository, if you open the raw text version of it, you can see an example of some of the markdown formatting.  You can also put any html code in a markdown file and it will be interpreted correctly. For example, this block is done using HTML:
+<div style="color: #3300FF; width: 50px; height: 50px">
+  what about words
+</div>
 
 ### Branches
 Sometimes you want to try things out, but you don't know if they're going to work, and you don't want to break the things you already have.
