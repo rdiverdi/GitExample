@@ -14,9 +14,9 @@ We are going to review the basics of github now that you've had a chance to use 
 * [ssh keys - for your convenience](#ssh-keys)
 
 ##### Useful Links
-*[markdown syntax](https://guides.github.com/features/mastering-markdown/)
-*[reverting to old code](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
-*[seting up ssh keys](https://help.github.com/articles/checking-for-existing-ssh-keys/)
+* [markdown syntax](https://guides.github.com/features/mastering-markdown/)
+* [reverting to old code](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
+* [seting up ssh keys](https://help.github.com/articles/checking-for-existing-ssh-keys/)
 
 ### Basics
 ##### Cloning a repository
