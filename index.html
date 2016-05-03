@@ -40,6 +40,15 @@
 <li><a href="GHpagesSetup">making a GithubPages website</a></li>
 </ul>
 
+<h5>
+<a id="useful-links" class="anchor" href="#useful-links" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Useful Links</h5>
+
+<ul>
+<li><a href="https://guides.github.com/features/mastering-markdown/">markdown syntax</a></li>
+<li><a href="https://github.com/blog/2019-how-to-undo-almost-anything-with-git">reverting to old code</a></li>
+<li><a href="https://help.github.com/articles/checking-for-existing-ssh-keys/">seting up ssh keys</a></li>
+</ul>
+
 <h3>
 <a id="basics" class="anchor" href="#basics" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Basics</h3>
 
@@ -103,7 +112,7 @@ There will be a line on their main github page saying they have been added to yo
     <span class="pl-c">#this is where your edits to the code will be</span>
 <span class="pl-k">=======</span>
     different code here 
-    <span class="pl-c">#this is where other peopl's edits to the same lines will be</span>
+    <span class="pl-c">#this is where other people's edits to the same lines will be</span>
 <span class="pl-k">&gt;&gt;&gt;&gt;&gt;&gt;</span><span class="pl-k">&gt;</span> <span class="pl-c1">0<span class="pl-ii">83457078470583439</span></span></pre></div>
 
 <p><code>HEAD</code> is your local changes, the equals signs are where it switches from your changes to the other changes, and the giant number is the name of the specific commit you are trying to merge with.
@@ -113,7 +122,7 @@ Then just add, commit, and push your changes.</p>
 <h3>
 <a id="using-gitignore" class="anchor" href="#using-gitignore" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using gitignore</h3>
 
-<p>Gitignores are wonderful things, they allow you to tell github that you want it to ignore a file, or a whole bunch of files.  This is usefull if you need to have a large video in your git repository, but don't want to (or can't) upload it to GitHub, or if you have 500 .txt files storing data that someone else can get for themselves if they really want it.</p>
+<p>Gitignores are wonderful things, they allow you to tell GitHub that you want it to ignore a file, or a whole bunch of files.  This is useful if you need to have a large video in your git repository, but don't want to (or can't) upload it to GitHub, or if you have 500 .txt files storing data that someone else can get for themselves if they really want it.</p>
 
 <p>Using a .gitignore is really easy, you just make a file named .gitignore in your repository, and type the name of any files you want to ignore.  These file names use the same syntax as the command line, where <code>*</code> means anything can go here: for example adding <code>*.txt</code> to the .gitignore will make github ignore all files ending in .txt.</p>
 
@@ -122,13 +131,13 @@ Then just add, commit, and push your changes.</p>
 <h3>
 <a id="using-readme" class="anchor" href="#using-readme" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using README</h3>
 
-<p>If your repository has a file README.md, it will be displayed under the repository on github.  This file is an excelent place to put documentation about running the code in the repository.  It uses the markdown formatting language which is documented specifically for github <a href="https://guides.github.com/features/mastering-markdown/">here</a>.  This is the README file for this repository, if you open the raw text version of it, you can see an example of some of the markdown formatting.</p>
+<p>If your repository has a file README.md, it will be displayed under the repository on github.  This file is an excellent place to put documentation about running the code in the repository.  It uses the markdown formatting language which is documented specifically for github <a href="https://guides.github.com/features/mastering-markdown/">here</a>.  This is the README file for this repository, if you open the raw text version of it, you can see an example of some of the markdown formatting.</p>
 
 <h3>
 <a id="branches" class="anchor" href="#branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Branches</h3>
 
 <p>Sometimes you want to try things out, but you don't know if they're going to work, and you don't want to break the things you already have.
-Or you and your partner are doing different things on the same code, and you don't want to keep dealing with merge conflicts everytime you sit down to do work.
+Or you and your partner are doing different things on the same code, and you don't want to keep dealing with merge conflicts every time you sit down to do work.
 This is what branches are for</p>
 
 <h5>
@@ -136,7 +145,7 @@ This is what branches are for</p>
 
 <p>Branches allow you to make changes to code while preserving a copy of the original.
 master is the branch you have been using, and it is the branch which should always hold the original working code.
-When you are trying things that might break everythin, you should make a branch, get your code working, then merge that branch back into master.  Alternatively, if everything you try fails miserably, you can just delete that branch and go back to the old code.</p>
+When you are trying things that might break everything, you should make a branch, get your code working, then merge that branch back into master.  Alternatively, if everything you try fails miserably, you can just delete that branch and go back to the old code.</p>
 
 <h5>
 <a id="making-a-branch" class="anchor" href="#making-a-branch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Making a Branch</h5>
@@ -191,7 +200,7 @@ When you are trying things that might break everythin, you should make a branch,
 
 <ul>
 <li>You have been creating pull requests to submit your code, but you haven't seen the other side of them.</li>
-<li>When you look at a pull request, you can see all of the differences bewtween the file on master and the new file, and you can make comments.</li>
+<li>When you look at a pull request, you can see all of the differences between the file on master and the new file, and you can make comments.</li>
 <li>Other people can also switch to your branch and run your code</li>
 <li>Once people have decided the branch looks good, they can merge it into master from the GitHub website</li>
 </ul>
@@ -208,7 +217,7 @@ When you are trying things that might break everythin, you should make a branch,
 <h3>
 <a id="reverting" class="anchor" href="#reverting" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Reverting</h3>
 
-<p>Version control is one of the most powerful aspects of Github.  This basically means there is an infinite undo button, in case you save broken code.  This undo button is called reverting.  There are a lot of different ways to revert code depending on where changes have been made.  The link below does a good job of outlining all of the ways you can get back to old versions of your code.
+<p>Version control is one of the most powerful aspects of GitHub.  This basically means there is an infinite undo button, in case you save broken code.  This undo button is called reverting.  There are a lot of different ways to revert code depending on where changes have been made.  The link below does a good job of outlining all of the ways you can get back to old versions of your code.
 <a href="https://github.com/blog/2019-how-to-undo-almost-anything-with-git">guide to reverting in GitHub</a></p>
 
 <h3>
@@ -216,7 +225,7 @@ When you are trying things that might break everythin, you should make a branch,
 
 <p>So, you know how you have to type in your username and password every time you commit something to github?
 There's a nice way around that, called ssh keys.
-<a href="https://help.github.com/articles/checking-for-existing-ssh-keys/">here</a> is the beginning of github's tutorial for setting them up.  Once they're set up, you should clone repositories using the SSH URL, not the HTTPS URL, then you won't need a password.</p>
+<a href="https://help.github.com/articles/checking-for-existing-ssh-keys/">here</a> is the beginning of GitHub's tutorial for setting them up.  Once they're set up, you should clone repositories using the SSH URL, not the HTTPS URL, then you won't need a password.</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/rdiverdi/GitExample">Github Tutorial</a> is maintained by <a href="https://github.com/rdiverdi">rdiverdi</a>.</span>
