@@ -12,7 +12,10 @@ filename: GHpagesSetup.md
 - [making a personal page - for something like a portfolio website](#making-a-personal-page)
 - [hosting on a different domain](#hosting-webpage-on-custom-domain)
 
-Making a website with multiple pages requires a bit more setup, Some less cool ninjas set up instructions for it [here](http://phuston.github.io/patrickandfrantonarethebestninjas/howto)
+### Useful Links
+- [setup multiple pages using markdown](http://phuston.github.io/patrickandfrantonarethebestninjas/howto)
+- [markdown syntax](https://guides.github.com/features/mastering-markdown/)
+- [using a different domain](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
 
 ## Making a Project Page
 
@@ -37,13 +40,13 @@ You can always go back and edit your page by going back to settings, launch page
 
 ### Linking to a markdown file
 If you have a markdown file for, say, one of the project writeups and you want to link to it, you can put a copy of it in the gh_pages branch of your repository (from terminal on your computer) and push it to github.  You can then link to that file from your main page using markdown syntax `[words that appear](filename)` to make a link to that file.
-To make this markdown file appear like another webpage, you need to follow [these setup instructions](http://phuston.github.io/patrickandfrantonarethebestninjas/howto) to setup jekyll.
+To make this markdown file appear formatted like the homepage, you need to follow [these setup instructions](http://phuston.github.io/patrickandfrantonarethebestninjas/howto) to setup jekyll.
+Also, when viewing markdown files as webpages, you can put html into your markdown files and they will be formatted correctly.  For example, <span style="color: #48f"> this is colored using html. </span>
 
 #### NOTE:
 In order for the markdown file to appear formatted correctly, you need to put this:<br>
 
-`---`
-
+`---`<br>
 `---`
 
 
