@@ -41,7 +41,7 @@ You can always go back and edit your page by going back to settings, launch page
 ### Linking to a markdown file
 If you have a markdown file for, say, one of the project writeups and you want to link to it, you can put a copy of it in the gh_pages branch of your repository (from terminal on your computer) and push it to github.  You can then link to that file from your main page using markdown syntax `[words that appear](filename)` to make a link to that file.
 To make this markdown file appear formatted like the homepage, you need to follow [these setup instructions](http://phuston.github.io/patrickandfrantonarethebestninjas/howto) to setup jekyll.
-Also, when viewing markdown files as webpages, you can put html into your markdown files and they will be formatted correctly.  For example, <span style="color: #48f"> this is colored using html. </span>
+Also, when viewing markdown files as webpages, you can put html into your markdown files and they will be formatted correctly.  For example, <span style="color: #d84"> this is colored using html. </span>
 
 #### NOTE:
 In order for the markdown file to appear formatted correctly, you need to put this:<br>
