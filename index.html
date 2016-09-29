@@ -110,7 +110,7 @@ There will be a line on their main github page saying they have been added to yo
 <div class="highlight highlight-source-python"><pre><span class="pl-k">&lt;&lt;&lt;&lt;&lt;&lt;</span><span class="pl-k">&lt;</span> <span class="pl-c1">HEAD</span>
     code here 
     <span class="pl-c">#this is where your edits to the code will be</span>
-<span class="pl-k">=======</span>
+<span class="pl-k">======</span><span class="pl-k">=</span>
     different code here 
     <span class="pl-c">#this is where other people's edits to the same lines will be</span>
 <span class="pl-k">&gt;&gt;&gt;&gt;&gt;&gt;</span><span class="pl-k">&gt;</span> <span class="pl-c1">0<span class="pl-ii">83457078470583439</span></span></pre></div>
@@ -153,6 +153,8 @@ When you are trying things that might break everything, you should make a branch
 <ul>
 <li>
 <code>git branch &lt;branchname&gt;</code> creates a local copy of a new branch, however it does not switch you to that branch</li>
+<li>
+<code>git checkout -b &lt;branchname&gt;</code> makes a local copy of a new branch and switches you to it at the same time</li>
 </ul>
 
 <h5>
@@ -163,6 +165,8 @@ When you are trying things that might break everything, you should make a branch
 <code>git checkout &lt;branchname&gt;</code> switches you to that branch</li>
 <li>
 <code>git branch --list</code> lists all branches</li>
+<li>If you are changing to a branch someone else made for the first time (it's not on your computer yet), you need to tell Git that it is tracked on GitHub. You do this with <code>git checkout -t &lt;branchname&gt;</code>
+</li>
 </ul>
 
 <h5>
